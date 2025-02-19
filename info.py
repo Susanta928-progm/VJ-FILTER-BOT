@@ -13,8 +13,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('API_ID', '21134445'))
 API_HASH = environ.get('API_HASH', '231c18ea7273824491d6bf05425ab74e')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7771120623:AAF312sY4LLhNT
-gbLdkrXBFnUJulqLBKabw")
+BOT_TOKEN = environ.get('BOT_TOKEN', "8102643762:AAFU6-G6b16N6JAdhkH_hLzw8IxFYfuhSJE")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
@@ -23,7 +22,7 @@ PICS = (environ.get('PICS', 'https://files.catbox.moe/a00em9.jpg')).split()
 
 # Admins & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7763229951').split()] # For Multiple Id Use One Space Between Each.
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]  # For Multiple Id Use One Space Between Each.
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', 'https://t.me/BORNHYPER_ACX').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
@@ -130,8 +129,8 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False)) # Set True Or False
-SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
-SHORTLINK_API = environ.get('SHORTLINK_API', '')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'https://adcash.in/auth/signup')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'c2ad0ea9208aa45c6e88a5b97250db084332d17f')
 TUTORIAL = environ.get('TUTORIAL', '') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
 
